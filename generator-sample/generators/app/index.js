@@ -13,6 +13,15 @@ module.exports = class extends Generator {
       Yeoman 自动在生成文件阶段调用此方法
       我们这里尝试往项目中写入文件
     */
-    this.fs.write(this.destinationPath('temp.txt'), Math.random().toString())
+    // this.fs.write(this.destinationPath('temp.txt'), Math.random().toString())
+    // 通过模版方式写入文件到目标目录
+    // 模板文件路径
+    const tmpl = this.templatePath('foo.txt')
+    // 输出目标路径
+    const output = this.destinationPath('foo.txt')
+    // 模板数据上下文
+    const context = { title: 'Hello aic', success: false }
+
+    this.fs.copyTpl(tmpl, output, context)
   }
 }
