@@ -1,5 +1,8 @@
 $backgroundColor: orange;
+$color: red;
 
 body {
   background: $backgroundColor;
+  color: $color;
+  font-size: 30px;
 }
