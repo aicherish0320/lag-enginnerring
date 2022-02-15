@@ -6,19 +6,23 @@
 */
 
 module.exports = (grunt) => {
+  grunt.registerTask('bad', () => {
+    console.log('bad working')
+    return false
+  })
   grunt.registerTask('foo', () => {
-    console.log('Hello grunt from foo')
+    console.log('foo working')
   })
-  grunt.registerTask('bar', '任务描述', () => {
-    console.log('Hello grunt from bar')
+  grunt.registerTask('bar', () => {
+    console.log('bar working')
   })
-  grunt.registerTask('default', ['foo', 'bar'])
+  grunt.registerTask('default', ['foo', 'bad', 'bar'])
 
-  grunt.registerTask('async-task', function () {
+  grunt.registerTask('async-bad', function () {
     const done = this.async()
     setTimeout(() => {
-      console.log('async-task')
-      done()
+      console.log('async bad')
+      done(false)
     }, 1000)
   })
 }
