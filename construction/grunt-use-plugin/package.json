@@ -1,0 +1,25 @@
+{
+  "name": "grunt-use-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "grunt": "^1.4.1",
+    "grunt-contrib-clean": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.4",
+    "@babel/preset-env": "^7.16.11",
+    "grunt-babel": "^8.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^3.1.0",
+    "load-grunt-tasks": "^5.1.0",
+    "sass": "^1.49.7"
+  }
+}

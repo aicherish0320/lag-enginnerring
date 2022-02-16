@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/js/index.js"],"names":["hello","console","log"],"mappings":";;AAAA,IAAMA,KAAK,GAAG,SAARA,KAAQ,GAAM;AAClBC,EAAAA,OAAO,CAACC,GAAR,CAAY,aAAZ;AACD,CAFD","sourcesContent":["const hello = () => {\n  console.log('hello grunt')\n}\n"],"file":"index.js"}
