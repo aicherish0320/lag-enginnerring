@@ -83,10 +83,14 @@ JavaScript 世界的构建工具
 
 Grunt 插件
 
-#### gulp
+#### gulp (The streaming build system)
 
-gulp 异步任务的三种方式
+**gulp 异步任务的三种方式**
 
 - 回调函数
 - promise
 - async/await
+
+**gulp 构建过程核心工作原理**
+
+输入（读取文件）-> 加工（压缩文件） -> 输出（写入文件）
