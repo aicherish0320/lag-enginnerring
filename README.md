@@ -94,3 +94,10 @@ Grunt 插件
 **gulp 构建过程核心工作原理**
 
 输入（读取文件）-> 加工（压缩文件） -> 输出（写入文件）
+
+**gulp 文件操作 API + 插件的使用**
+
+- gulp-clean-css
+- gulp-rename
+
+**gulp 自动化构建案例**
