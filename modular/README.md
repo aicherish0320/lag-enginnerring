@@ -124,6 +124,13 @@ console.log(foo)
 4. ES Module，引入文件不能省略文件扩展名、也不会自动引入文件夹下的 index.js
 5. import 只能在最顶层引入文件，如果需要动态引入需要使用`import()`
 
+**ES Module 和 CommonJS**
+
+1. ES Modules 中可以导入 CommonJS 模块
+2. CommonJS 中不能导入 ES Modules 模块
+3. CommonJS 始终只会导出一个默认成员
+4. 注意 import 不是解构导出对象
+
 ## 常用的模块化打包工具
 
 ## 基于模块化工具构建现代 Web 应用
