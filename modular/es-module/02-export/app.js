@@ -1,4 +1,12 @@
-import { name, fn } from './module.js'
+// import { name, fn } from './module.js'
+
+// console.log(name)
+// fn()
+
+import { name, hello } from './module.js'
 
 console.log(name)
-fn()
+
+setTimeout(() => {
+  console.log(name)
+}, 2000)

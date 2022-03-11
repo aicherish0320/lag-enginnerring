@@ -116,6 +116,12 @@ import { foo } from './module.js'
 console.log(foo)
 ```
 
+**注意：**
+
+1. export {}，后面的大括号是 export 语法，不是导出一个字面量变量
+2. export default { }，后面的大括号，才是导出一个字面量变量，导入的时候，不能使用结构语法引入{ name, age }，import {}，后面的大括号也是语法
+3. export {}，导出是变量的引用，并且是只读的
+
 ## 常用的模块化打包工具
 
 ## 基于模块化工具构建现代 Web 应用
